@@ -1,0 +1,430 @@
+2026-06-19T15:56:47.419Z - adapter_error_getSessionAndUser
+{
+  "code": "P1001",
+  "meta": {
+    "modelName": "Session",
+    "driverAdapterError": {
+      "name": "DriverAdapterError",
+      "cause": {
+        "kind": "DatabaseNotReachable",
+        "host": "db.gewdofxyuqkhgltsvqyr.supabase.co"
+      }
+    }
+  },
+  "clientVersion": "7.8.0",
+  "name": "PrismaClientKnownRequestError"
+}
+
+2026-06-19T15:56:47.491Z - SESSION_ERROR
+{
+  "name": "GetSessionAndUserError",
+  "message": "\nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co",
+  "stack": "PrismaClientKnownRequestError: \nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co\n    at zr.handleRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:8286)\n    at zr.handleAndLogRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7581)\n    at zr.request (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async a (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:75:6862)\n    at async getSessionAndUser (webpack-internal:///(rsc)/./node_modules/@auth/prisma-adapter/index.js:29:36)"
+}
+
+2026-06-19T15:56:49.100Z - OAUTH_CALLBACK_ERROR
+{
+  "error": {
+    "name": "OAuthCallbackError",
+    "message": "unexpected iss value, expected undefined, got: https://www.linkedin.com/oauth",
+    "stack": "RPError: unexpected iss value, expected undefined, got: https://www.linkedin.com/oauth\n    at Client.validateJWT (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:830:23)\n    at Client.validateIdToken (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:664:64)\n    at Client.callback (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:443:24)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async oAuthCallback (webpack-internal:///(rsc)/./node_modules/next-auth/core/lib/oauth/callback.js:94:16)\n    at async Object.callback (webpack-internal:///(rsc)/./node_modules/next-auth/core/routes/callback.js:45:11)\n    at async AuthHandler (webpack-internal:///(rsc)/./node_modules/next-auth/core/index.js:184:28)\n    at async NextAuthRouteHandler (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:57:28)\n    at async NextAuth._args$ (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:89:16)\n    at async AppRouteRouteModule.do (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:40115)\n    at async AppRouteRouteModule.handle (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:47395)\n    at async responseGenerator (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:254:38)\n    at async AppRouteRouteModule.handleResponse (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:1:228477)\n    at async handleResponse (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:317:32)\n    at async Module.handler (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:372:13)\n    at async DevServer.renderToResponseWithComponentsImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1462:9)\n    at async DevServer.renderPageComponent (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1514:24)\n    at async DevServer.renderToResponseImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1564:32)\n    at async DevServer.pipeImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1044:25)\n    at async NextNodeServer.handleCatchallRenderRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\next-server.js:338:17)\n    at async DevServer.handleRequestImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:935:17)\n    at async D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:394:20\n    at async Span.traceAsyncFn (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\trace\\trace.js:164:20)\n    at async DevServer.handleRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:390:24)\n    at async invokeRender (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:266:21)\n    at async handleRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:465:24)\n    at async requestHandlerImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:514:13)\n    at async Server.requestListener (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\start-server.js:225:13)"
+  },
+  "providerId": "linkedin"
+}
+
+2026-06-19T15:56:50.306Z - adapter_error_getSessionAndUser
+{
+  "code": "P1001",
+  "meta": {
+    "modelName": "Session",
+    "driverAdapterError": {
+      "name": "DriverAdapterError",
+      "cause": {
+        "kind": "DatabaseNotReachable",
+        "host": "db.gewdofxyuqkhgltsvqyr.supabase.co"
+      }
+    }
+  },
+  "clientVersion": "7.8.0",
+  "name": "PrismaClientKnownRequestError"
+}
+
+2026-06-19T15:56:50.345Z - SESSION_ERROR
+{
+  "name": "GetSessionAndUserError",
+  "message": "\nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co",
+  "stack": "PrismaClientKnownRequestError: \nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co\n    at zr.handleRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:8286)\n    at zr.handleAndLogRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7581)\n    at zr.request (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async a (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:75:6862)\n    at async getSessionAndUser (webpack-internal:///(rsc)/./node_modules/@auth/prisma-adapter/index.js:29:36)"
+}
+
+2026-06-19T15:57:06.841Z - adapter_error_getSessionAndUser
+{
+  "code": "P1001",
+  "meta": {
+    "modelName": "Session",
+    "driverAdapterError": {
+      "name": "DriverAdapterError",
+      "cause": {
+        "kind": "DatabaseNotReachable",
+        "host": "db.gewdofxyuqkhgltsvqyr.supabase.co"
+      }
+    }
+  },
+  "clientVersion": "7.8.0",
+  "name": "PrismaClientKnownRequestError"
+}
+
+2026-06-19T15:57:06.887Z - SESSION_ERROR
+{
+  "name": "GetSessionAndUserError",
+  "message": "\nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co",
+  "stack": "PrismaClientKnownRequestError: \nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co\n    at zr.handleRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:8286)\n    at zr.handleAndLogRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7581)\n    at zr.request (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async a (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:75:6862)\n    at async getSessionAndUser (webpack-internal:///(rsc)/./node_modules/@auth/prisma-adapter/index.js:29:36)"
+}
+
+2026-06-19T15:57:49.774Z - adapter_error_getSessionAndUser
+{
+  "code": "P1001",
+  "meta": {
+    "modelName": "Session",
+    "driverAdapterError": {
+      "name": "DriverAdapterError",
+      "cause": {
+        "kind": "DatabaseNotReachable",
+        "host": "db.gewdofxyuqkhgltsvqyr.supabase.co"
+      }
+    }
+  },
+  "clientVersion": "7.8.0",
+  "name": "PrismaClientKnownRequestError"
+}
+
+2026-06-19T15:57:49.814Z - SESSION_ERROR
+{
+  "name": "GetSessionAndUserError",
+  "message": "\nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co",
+  "stack": "PrismaClientKnownRequestError: \nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co\n    at zr.handleRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:8286)\n    at zr.handleAndLogRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7581)\n    at zr.request (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async a (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:75:6862)\n    at async getSessionAndUser (webpack-internal:///(rsc)/./node_modules/@auth/prisma-adapter/index.js:29:36)"
+}
+
+2026-06-19T15:57:54.672Z - OAUTH_CALLBACK_ERROR
+{
+  "error": {
+    "name": "OAuthCallbackError",
+    "message": "unexpected iss value, expected undefined, got: https://www.linkedin.com/oauth",
+    "stack": "RPError: unexpected iss value, expected undefined, got: https://www.linkedin.com/oauth\n    at Client.validateJWT (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:830:23)\n    at Client.validateIdToken (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:664:64)\n    at Client.callback (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:443:24)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async oAuthCallback (webpack-internal:///(rsc)/./node_modules/next-auth/core/lib/oauth/callback.js:94:16)\n    at async Object.callback (webpack-internal:///(rsc)/./node_modules/next-auth/core/routes/callback.js:45:11)\n    at async AuthHandler (webpack-internal:///(rsc)/./node_modules/next-auth/core/index.js:184:28)\n    at async NextAuthRouteHandler (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:57:28)\n    at async NextAuth._args$ (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:89:16)\n    at async AppRouteRouteModule.do (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:40115)\n    at async AppRouteRouteModule.handle (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:47395)\n    at async responseGenerator (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:254:38)\n    at async AppRouteRouteModule.handleResponse (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:1:228477)\n    at async handleResponse (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:317:32)\n    at async Module.handler (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:372:13)\n    at async DevServer.renderToResponseWithComponentsImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1462:9)\n    at async DevServer.renderPageComponent (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1514:24)\n    at async DevServer.renderToResponseImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1564:32)\n    at async DevServer.pipeImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1044:25)\n    at async NextNodeServer.handleCatchallRenderRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\next-server.js:338:17)\n    at async DevServer.handleRequestImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:935:17)\n    at async D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:394:20\n    at async Span.traceAsyncFn (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\trace\\trace.js:164:20)\n    at async DevServer.handleRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:390:24)\n    at async invokeRender (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:266:21)\n    at async handleRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:465:24)\n    at async requestHandlerImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:514:13)\n    at async Server.requestListener (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\start-server.js:225:13)"
+  },
+  "providerId": "linkedin"
+}
+
+2026-06-19T15:57:55.949Z - adapter_error_getSessionAndUser
+{
+  "code": "P1001",
+  "meta": {
+    "modelName": "Session",
+    "driverAdapterError": {
+      "name": "DriverAdapterError",
+      "cause": {
+        "kind": "DatabaseNotReachable",
+        "host": "db.gewdofxyuqkhgltsvqyr.supabase.co"
+      }
+    }
+  },
+  "clientVersion": "7.8.0",
+  "name": "PrismaClientKnownRequestError"
+}
+
+2026-06-19T15:57:55.993Z - SESSION_ERROR
+{
+  "name": "GetSessionAndUserError",
+  "message": "\nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co",
+  "stack": "PrismaClientKnownRequestError: \nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co\n    at zr.handleRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:8286)\n    at zr.handleAndLogRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7581)\n    at zr.request (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async a (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:75:6862)\n    at async getSessionAndUser (webpack-internal:///(rsc)/./node_modules/@auth/prisma-adapter/index.js:29:36)"
+}
+
+2026-06-19T15:58:47.957Z - adapter_error_getSessionAndUser
+{
+  "code": "P1001",
+  "meta": {
+    "modelName": "Session",
+    "driverAdapterError": {
+      "name": "DriverAdapterError",
+      "cause": {
+        "kind": "DatabaseNotReachable",
+        "host": "db.gewdofxyuqkhgltsvqyr.supabase.co"
+      }
+    }
+  },
+  "clientVersion": "7.8.0",
+  "name": "PrismaClientKnownRequestError"
+}
+
+2026-06-19T15:58:48.010Z - SESSION_ERROR
+{
+  "name": "GetSessionAndUserError",
+  "message": "\nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co",
+  "stack": "PrismaClientKnownRequestError: \nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co\n    at zr.handleRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:8286)\n    at zr.handleAndLogRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7581)\n    at zr.request (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async a (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:75:6862)\n    at async getSessionAndUser (webpack-internal:///(rsc)/./node_modules/@auth/prisma-adapter/index.js:29:36)"
+}
+
+2026-06-19T15:58:52.366Z - adapter_error_getSessionAndUser
+{
+  "code": "P1001",
+  "meta": {
+    "modelName": "Session",
+    "driverAdapterError": {
+      "name": "DriverAdapterError",
+      "cause": {
+        "kind": "DatabaseNotReachable",
+        "host": "db.gewdofxyuqkhgltsvqyr.supabase.co"
+      }
+    }
+  },
+  "clientVersion": "7.8.0",
+  "name": "PrismaClientKnownRequestError"
+}
+
+2026-06-19T15:58:52.402Z - SESSION_ERROR
+{
+  "name": "GetSessionAndUserError",
+  "message": "\nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co",
+  "stack": "PrismaClientKnownRequestError: \nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co\n    at zr.handleRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:8286)\n    at zr.handleAndLogRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7581)\n    at zr.request (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async a (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:75:6862)\n    at async getSessionAndUser (webpack-internal:///(rsc)/./node_modules/@auth/prisma-adapter/index.js:29:36)"
+}
+
+2026-06-19T15:59:03.068Z - OAUTH_CALLBACK_ERROR
+{
+  "error": {
+    "name": "OAuthCallbackError",
+    "message": "unexpected iss value, expected undefined, got: https://www.linkedin.com/oauth",
+    "stack": "RPError: unexpected iss value, expected undefined, got: https://www.linkedin.com/oauth\n    at Client.validateJWT (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:830:23)\n    at Client.validateIdToken (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:664:64)\n    at Client.callback (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:443:24)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async oAuthCallback (webpack-internal:///(rsc)/./node_modules/next-auth/core/lib/oauth/callback.js:94:16)\n    at async Object.callback (webpack-internal:///(rsc)/./node_modules/next-auth/core/routes/callback.js:45:11)\n    at async AuthHandler (webpack-internal:///(rsc)/./node_modules/next-auth/core/index.js:184:28)\n    at async NextAuthRouteHandler (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:57:28)\n    at async NextAuth._args$ (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:89:16)\n    at async AppRouteRouteModule.do (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:40115)\n    at async AppRouteRouteModule.handle (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:47395)\n    at async responseGenerator (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:254:38)\n    at async AppRouteRouteModule.handleResponse (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:1:228477)\n    at async handleResponse (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:317:32)\n    at async Module.handler (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:372:13)\n    at async DevServer.renderToResponseWithComponentsImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1462:9)\n    at async DevServer.renderPageComponent (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1514:24)\n    at async DevServer.renderToResponseImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1564:32)\n    at async DevServer.pipeImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1044:25)\n    at async NextNodeServer.handleCatchallRenderRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\next-server.js:338:17)\n    at async DevServer.handleRequestImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:935:17)\n    at async D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:394:20\n    at async Span.traceAsyncFn (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\trace\\trace.js:164:20)\n    at async DevServer.handleRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:390:24)\n    at async invokeRender (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:266:21)\n    at async handleRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:465:24)\n    at async requestHandlerImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:514:13)\n    at async Server.requestListener (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\start-server.js:225:13)"
+  },
+  "providerId": "linkedin"
+}
+
+2026-06-19T15:59:04.365Z - adapter_error_getSessionAndUser
+{
+  "code": "P1001",
+  "meta": {
+    "modelName": "Session",
+    "driverAdapterError": {
+      "name": "DriverAdapterError",
+      "cause": {
+        "kind": "DatabaseNotReachable",
+        "host": "db.gewdofxyuqkhgltsvqyr.supabase.co"
+      }
+    }
+  },
+  "clientVersion": "7.8.0",
+  "name": "PrismaClientKnownRequestError"
+}
+
+2026-06-19T15:59:04.407Z - SESSION_ERROR
+{
+  "name": "GetSessionAndUserError",
+  "message": "\nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co",
+  "stack": "PrismaClientKnownRequestError: \nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co\n    at zr.handleRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:8286)\n    at zr.handleAndLogRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7581)\n    at zr.request (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async a (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:75:6862)\n    at async getSessionAndUser (webpack-internal:///(rsc)/./node_modules/@auth/prisma-adapter/index.js:29:36)"
+}
+
+2026-06-19T16:00:27.197Z - OAUTH_CALLBACK_ERROR
+{
+  "error": {
+    "name": "OAuthCallbackError",
+    "message": "unexpected iss value, expected undefined, got: https://www.linkedin.com/oauth",
+    "stack": "RPError: unexpected iss value, expected undefined, got: https://www.linkedin.com/oauth\n    at Client.validateJWT (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:830:23)\n    at Client.validateIdToken (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:664:64)\n    at Client.callback (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:443:24)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async oAuthCallback (webpack-internal:///(rsc)/./node_modules/next-auth/core/lib/oauth/callback.js:94:16)\n    at async Object.callback (webpack-internal:///(rsc)/./node_modules/next-auth/core/routes/callback.js:45:11)\n    at async AuthHandler (webpack-internal:///(rsc)/./node_modules/next-auth/core/index.js:184:28)\n    at async NextAuthRouteHandler (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:57:28)\n    at async NextAuth._args$ (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:89:16)\n    at async AppRouteRouteModule.do (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:40115)\n    at async AppRouteRouteModule.handle (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:47395)\n    at async responseGenerator (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:254:38)\n    at async AppRouteRouteModule.handleResponse (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:1:228477)\n    at async handleResponse (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:317:32)\n    at async Module.handler (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:372:13)\n    at async DevServer.renderToResponseWithComponentsImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1462:9)\n    at async DevServer.renderPageComponent (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1514:24)\n    at async DevServer.renderToResponseImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1564:32)\n    at async DevServer.pipeImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1044:25)\n    at async NextNodeServer.handleCatchallRenderRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\next-server.js:338:17)\n    at async DevServer.handleRequestImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:935:17)\n    at async D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:394:20\n    at async Span.traceAsyncFn (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\trace\\trace.js:164:20)\n    at async DevServer.handleRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:390:24)\n    at async invokeRender (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:266:21)\n    at async handleRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:465:24)\n    at async requestHandlerImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:514:13)\n    at async Server.requestListener (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\start-server.js:225:13)"
+  },
+  "providerId": "linkedin"
+}
+
+2026-06-19T16:00:28.802Z - adapter_error_getSessionAndUser
+{
+  "code": "P1001",
+  "meta": {
+    "modelName": "Session",
+    "driverAdapterError": {
+      "name": "DriverAdapterError",
+      "cause": {
+        "kind": "DatabaseNotReachable",
+        "host": "db.gewdofxyuqkhgltsvqyr.supabase.co"
+      }
+    }
+  },
+  "clientVersion": "7.8.0",
+  "name": "PrismaClientKnownRequestError"
+}
+
+2026-06-19T16:00:28.871Z - SESSION_ERROR
+{
+  "name": "GetSessionAndUserError",
+  "message": "\nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co",
+  "stack": "PrismaClientKnownRequestError: \nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co\n    at zr.handleRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:8286)\n    at zr.handleAndLogRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7581)\n    at zr.request (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async a (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:75:6862)\n    at async getSessionAndUser (webpack-internal:///(rsc)/./node_modules/@auth/prisma-adapter/index.js:29:36)"
+}
+
+2026-06-19T16:01:20.167Z - OAUTH_CALLBACK_ERROR
+{
+  "error": {
+    "name": "OAuthCallbackError",
+    "message": "unexpected iss value, expected undefined, got: https://www.linkedin.com/oauth",
+    "stack": "RPError: unexpected iss value, expected undefined, got: https://www.linkedin.com/oauth\n    at Client.validateJWT (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:830:23)\n    at Client.validateIdToken (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:664:64)\n    at Client.callback (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:443:24)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async oAuthCallback (webpack-internal:///(rsc)/./node_modules/next-auth/core/lib/oauth/callback.js:94:16)\n    at async Object.callback (webpack-internal:///(rsc)/./node_modules/next-auth/core/routes/callback.js:45:11)\n    at async AuthHandler (webpack-internal:///(rsc)/./node_modules/next-auth/core/index.js:184:28)\n    at async NextAuthRouteHandler (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:57:28)\n    at async NextAuth._args$ (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:89:16)\n    at async AppRouteRouteModule.do (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:40115)\n    at async AppRouteRouteModule.handle (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:47395)\n    at async responseGenerator (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:254:38)\n    at async AppRouteRouteModule.handleResponse (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:1:228477)\n    at async handleResponse (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:317:32)\n    at async Module.handler (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:372:13)\n    at async DevServer.renderToResponseWithComponentsImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1462:9)\n    at async DevServer.renderPageComponent (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1514:24)\n    at async DevServer.renderToResponseImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1564:32)\n    at async DevServer.pipeImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1044:25)\n    at async NextNodeServer.handleCatchallRenderRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\next-server.js:338:17)\n    at async DevServer.handleRequestImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:935:17)\n    at async D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:394:20\n    at async Span.traceAsyncFn (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\trace\\trace.js:164:20)\n    at async DevServer.handleRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:390:24)\n    at async invokeRender (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:266:21)\n    at async handleRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:465:24)\n    at async requestHandlerImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:514:13)\n    at async Server.requestListener (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\start-server.js:225:13)"
+  },
+  "providerId": "linkedin"
+}
+
+2026-06-19T16:01:21.278Z - adapter_error_getSessionAndUser
+{
+  "code": "P1001",
+  "meta": {
+    "modelName": "Session",
+    "driverAdapterError": {
+      "name": "DriverAdapterError",
+      "cause": {
+        "kind": "DatabaseNotReachable",
+        "host": "db.gewdofxyuqkhgltsvqyr.supabase.co"
+      }
+    }
+  },
+  "clientVersion": "7.8.0",
+  "name": "PrismaClientKnownRequestError"
+}
+
+2026-06-19T16:01:21.311Z - SESSION_ERROR
+{
+  "name": "GetSessionAndUserError",
+  "message": "\nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co",
+  "stack": "PrismaClientKnownRequestError: \nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co\n    at zr.handleRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:8286)\n    at zr.handleAndLogRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7581)\n    at zr.request (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async a (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:75:6862)\n    at async getSessionAndUser (webpack-internal:///(rsc)/./node_modules/@auth/prisma-adapter/index.js:29:36)"
+}
+
+2026-06-20T06:20:31.029Z - adapter_error_getSessionAndUser
+{
+  "code": "P1001",
+  "meta": {
+    "modelName": "Session",
+    "driverAdapterError": {
+      "name": "DriverAdapterError",
+      "cause": {
+        "kind": "DatabaseNotReachable",
+        "host": "db.gewdofxyuqkhgltsvqyr.supabase.co"
+      }
+    }
+  },
+  "clientVersion": "7.8.0",
+  "name": "PrismaClientKnownRequestError"
+}
+
+2026-06-20T06:20:31.075Z - SESSION_ERROR
+{
+  "name": "GetSessionAndUserError",
+  "message": "\nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co",
+  "stack": "PrismaClientKnownRequestError: \nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co\n    at zr.handleRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:8286)\n    at zr.handleAndLogRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7581)\n    at zr.request (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async a (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:75:6862)\n    at async getSessionAndUser (webpack-internal:///(rsc)/./node_modules/@auth/prisma-adapter/index.js:29:36)"
+}
+
+2026-06-20T06:20:39.465Z - adapter_error_getSessionAndUser
+{
+  "code": "P1001",
+  "meta": {
+    "modelName": "Session",
+    "driverAdapterError": {
+      "name": "DriverAdapterError",
+      "cause": {
+        "kind": "DatabaseNotReachable",
+        "host": "db.gewdofxyuqkhgltsvqyr.supabase.co"
+      }
+    }
+  },
+  "clientVersion": "7.8.0",
+  "name": "PrismaClientKnownRequestError"
+}
+
+2026-06-20T06:20:39.515Z - SESSION_ERROR
+{
+  "name": "GetSessionAndUserError",
+  "message": "\nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co",
+  "stack": "PrismaClientKnownRequestError: \nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co\n    at zr.handleRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:8286)\n    at zr.handleAndLogRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7581)\n    at zr.request (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async a (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:75:6862)\n    at async getSessionAndUser (webpack-internal:///(rsc)/./node_modules/@auth/prisma-adapter/index.js:29:36)"
+}
+
+2026-06-20T06:26:01.439Z - OAUTH_CALLBACK_ERROR
+{
+  "error": {
+    "name": "OAuthCallbackError",
+    "message": "jwks_uri must be configured on the issuer",
+    "stack": "TypeError: jwks_uri must be configured on the issuer\n    at assertIssuerConfiguration (webpack-internal:///(rsc)/./node_modules/openid-client/lib/helpers/assert.js:17:11)\n    at Issuer.getKeyStore (webpack-internal:///(rsc)/./node_modules/openid-client/lib/helpers/issuer.js:22:3)\n    at Issuer.queryKeyStore (webpack-internal:///(rsc)/./node_modules/openid-client/lib/helpers/issuer.js:84:38)\n    at Client.validateJWT (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:976:40)\n    at Client.validateIdToken (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:664:64)\n    at Client.callback (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:443:24)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async oAuthCallback (webpack-internal:///(rsc)/./node_modules/next-auth/core/lib/oauth/callback.js:94:16)\n    at async Object.callback (webpack-internal:///(rsc)/./node_modules/next-auth/core/routes/callback.js:45:11)\n    at async AuthHandler (webpack-internal:///(rsc)/./node_modules/next-auth/core/index.js:184:28)\n    at async NextAuthRouteHandler (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:57:28)\n    at async NextAuth._args$ (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:89:16)\n    at async AppRouteRouteModule.do (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:40115)\n    at async AppRouteRouteModule.handle (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:47395)\n    at async responseGenerator (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:254:38)\n    at async AppRouteRouteModule.handleResponse (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:1:228477)\n    at async handleResponse (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:317:32)\n    at async Module.handler (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:372:13)\n    at async DevServer.renderToResponseWithComponentsImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1462:9)\n    at async DevServer.renderPageComponent (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1514:24)\n    at async DevServer.renderToResponseImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1564:32)\n    at async DevServer.pipeImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1044:25)\n    at async NextNodeServer.handleCatchallRenderRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\next-server.js:338:17)\n    at async DevServer.handleRequestImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:935:17)\n    at async D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:394:20\n    at async Span.traceAsyncFn (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\trace\\trace.js:164:20)\n    at async DevServer.handleRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:390:24)\n    at async invokeRender (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:266:21)\n    at async handleRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:465:24)\n    at async requestHandlerImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:514:13)\n    at async Server.requestListener (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\start-server.js:225:13)"
+  },
+  "providerId": "linkedin"
+}
+
+2026-06-20T06:26:03.467Z - adapter_error_getSessionAndUser
+{
+  "code": "P1001",
+  "meta": {
+    "modelName": "Session",
+    "driverAdapterError": {
+      "name": "DriverAdapterError",
+      "cause": {
+        "kind": "DatabaseNotReachable",
+        "host": "db.gewdofxyuqkhgltsvqyr.supabase.co"
+      }
+    }
+  },
+  "clientVersion": "7.8.0",
+  "name": "PrismaClientKnownRequestError"
+}
+
+2026-06-20T06:26:03.508Z - SESSION_ERROR
+{
+  "name": "GetSessionAndUserError",
+  "message": "\nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co",
+  "stack": "PrismaClientKnownRequestError: \nInvalid `prisma.session.findUnique()` invocation:\n\n\nCan't reach database server at db.gewdofxyuqkhgltsvqyr.supabase.co\n    at zr.handleRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:8286)\n    at zr.handleAndLogRequestError (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7581)\n    at zr.request (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:65:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async a (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\@prisma\\client\\runtime\\client.js:75:6862)\n    at async getSessionAndUser (webpack-internal:///(rsc)/./node_modules/@auth/prisma-adapter/index.js:29:36)"
+}
+
+2026-06-20T06:29:31.146Z - OAUTH_CALLBACK_ERROR
+{
+  "error": {
+    "name": "OAuthCallbackError",
+    "message": "jwks_uri must be configured on the issuer",
+    "stack": "TypeError: jwks_uri must be configured on the issuer\n    at assertIssuerConfiguration (webpack-internal:///(rsc)/./node_modules/openid-client/lib/helpers/assert.js:17:11)\n    at Issuer.getKeyStore (webpack-internal:///(rsc)/./node_modules/openid-client/lib/helpers/issuer.js:22:3)\n    at Issuer.queryKeyStore (webpack-internal:///(rsc)/./node_modules/openid-client/lib/helpers/issuer.js:84:38)\n    at Client.validateJWT (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:976:40)\n    at Client.validateIdToken (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:664:64)\n    at Client.callback (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:443:24)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async oAuthCallback (webpack-internal:///(rsc)/./node_modules/next-auth/core/lib/oauth/callback.js:94:16)\n    at async Object.callback (webpack-internal:///(rsc)/./node_modules/next-auth/core/routes/callback.js:45:11)\n    at async AuthHandler (webpack-internal:///(rsc)/./node_modules/next-auth/core/index.js:184:28)\n    at async NextAuthRouteHandler (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:57:28)\n    at async NextAuth._args$ (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:89:16)\n    at async AppRouteRouteModule.do (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:40115)\n    at async AppRouteRouteModule.handle (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:47395)\n    at async responseGenerator (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:254:38)\n    at async AppRouteRouteModule.handleResponse (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:1:228477)\n    at async handleResponse (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:317:32)\n    at async Module.handler (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:372:13)\n    at async DevServer.renderToResponseWithComponentsImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1462:9)\n    at async DevServer.renderPageComponent (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1514:24)\n    at async DevServer.renderToResponseImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1564:32)\n    at async DevServer.pipeImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1044:25)\n    at async NextNodeServer.handleCatchallRenderRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\next-server.js:338:17)\n    at async DevServer.handleRequestImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:935:17)\n    at async D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:394:20\n    at async Span.traceAsyncFn (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\trace\\trace.js:164:20)\n    at async DevServer.handleRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:390:24)\n    at async invokeRender (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:266:21)\n    at async handleRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:465:24)\n    at async requestHandlerImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:514:13)\n    at async Server.requestListener (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\start-server.js:225:13)"
+  },
+  "providerId": "linkedin"
+}
+
+2026-06-20T06:34:12.170Z - OAUTH_CALLBACK_ERROR
+{
+  "error": {
+    "name": "OAuthCallbackError",
+    "message": "jwks_uri must be configured on the issuer",
+    "stack": "TypeError: jwks_uri must be configured on the issuer\n    at assertIssuerConfiguration (webpack-internal:///(rsc)/./node_modules/openid-client/lib/helpers/assert.js:17:11)\n    at Issuer.getKeyStore (webpack-internal:///(rsc)/./node_modules/openid-client/lib/helpers/issuer.js:22:3)\n    at Issuer.queryKeyStore (webpack-internal:///(rsc)/./node_modules/openid-client/lib/helpers/issuer.js:84:38)\n    at Client.validateJWT (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:976:40)\n    at Client.validateIdToken (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:664:64)\n    at Client.callback (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:443:24)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async oAuthCallback (webpack-internal:///(rsc)/./node_modules/next-auth/core/lib/oauth/callback.js:94:16)\n    at async Object.callback (webpack-internal:///(rsc)/./node_modules/next-auth/core/routes/callback.js:45:11)\n    at async AuthHandler (webpack-internal:///(rsc)/./node_modules/next-auth/core/index.js:184:28)\n    at async NextAuthRouteHandler (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:57:28)\n    at async NextAuth._args$ (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:89:16)\n    at async AppRouteRouteModule.do (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:40115)\n    at async AppRouteRouteModule.handle (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:47395)\n    at async responseGenerator (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:254:38)\n    at async AppRouteRouteModule.handleResponse (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:1:228477)\n    at async handleResponse (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:317:32)\n    at async Module.handler (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:372:13)\n    at async DevServer.renderToResponseWithComponentsImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1462:9)\n    at async DevServer.renderPageComponent (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1514:24)\n    at async DevServer.renderToResponseImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1564:32)\n    at async DevServer.pipeImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1044:25)\n    at async NextNodeServer.handleCatchallRenderRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\next-server.js:338:17)\n    at async DevServer.handleRequestImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:935:17)\n    at async D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:394:20\n    at async Span.traceAsyncFn (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\trace\\trace.js:164:20)\n    at async DevServer.handleRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:390:24)\n    at async invokeRender (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:266:21)\n    at async handleRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:465:24)\n    at async requestHandlerImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:514:13)\n    at async Server.requestListener (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\start-server.js:225:13)"
+  },
+  "providerId": "linkedin"
+}
+
+2026-06-20T06:34:20.440Z - OAUTH_CALLBACK_ERROR
+{
+  "error": {
+    "name": "OAuthCallbackError",
+    "message": "jwks_uri must be configured on the issuer",
+    "stack": "TypeError: jwks_uri must be configured on the issuer\n    at assertIssuerConfiguration (webpack-internal:///(rsc)/./node_modules/openid-client/lib/helpers/assert.js:17:11)\n    at Issuer.getKeyStore (webpack-internal:///(rsc)/./node_modules/openid-client/lib/helpers/issuer.js:22:3)\n    at Issuer.queryKeyStore (webpack-internal:///(rsc)/./node_modules/openid-client/lib/helpers/issuer.js:84:38)\n    at Client.validateJWT (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:976:40)\n    at Client.validateIdToken (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:664:64)\n    at Client.callback (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:443:24)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async oAuthCallback (webpack-internal:///(rsc)/./node_modules/next-auth/core/lib/oauth/callback.js:94:16)\n    at async Object.callback (webpack-internal:///(rsc)/./node_modules/next-auth/core/routes/callback.js:45:11)\n    at async AuthHandler (webpack-internal:///(rsc)/./node_modules/next-auth/core/index.js:184:28)\n    at async NextAuthRouteHandler (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:57:28)\n    at async NextAuth._args$ (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:89:16)\n    at async AppRouteRouteModule.do (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:40115)\n    at async AppRouteRouteModule.handle (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:47395)\n    at async responseGenerator (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:254:38)\n    at async AppRouteRouteModule.handleResponse (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:1:228477)\n    at async handleResponse (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:317:32)\n    at async Module.handler (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:372:13)\n    at async DevServer.renderToResponseWithComponentsImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1462:9)\n    at async DevServer.renderPageComponent (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1514:24)\n    at async DevServer.renderToResponseImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1564:32)\n    at async DevServer.pipeImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1044:25)\n    at async NextNodeServer.handleCatchallRenderRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\next-server.js:338:17)\n    at async DevServer.handleRequestImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:935:17)\n    at async D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:394:20\n    at async Span.traceAsyncFn (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\trace\\trace.js:164:20)\n    at async DevServer.handleRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:390:24)\n    at async invokeRender (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:266:21)\n    at async handleRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:465:24)\n    at async requestHandlerImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:514:13)\n    at async Server.requestListener (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\start-server.js:225:13)"
+  },
+  "providerId": "linkedin"
+}
+
+2026-06-20T06:35:17.735Z - OAUTH_CALLBACK_ERROR
+{
+  "error": {
+    "name": "OAuthCallbackError",
+    "message": "jwks_uri must be configured on the issuer",
+    "stack": "TypeError: jwks_uri must be configured on the issuer\n    at assertIssuerConfiguration (webpack-internal:///(rsc)/./node_modules/openid-client/lib/helpers/assert.js:17:11)\n    at Issuer.getKeyStore (webpack-internal:///(rsc)/./node_modules/openid-client/lib/helpers/issuer.js:22:3)\n    at Issuer.queryKeyStore (webpack-internal:///(rsc)/./node_modules/openid-client/lib/helpers/issuer.js:84:38)\n    at Client.validateJWT (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:976:40)\n    at Client.validateIdToken (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:664:64)\n    at Client.callback (webpack-internal:///(rsc)/./node_modules/openid-client/lib/client.js:443:24)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async oAuthCallback (webpack-internal:///(rsc)/./node_modules/next-auth/core/lib/oauth/callback.js:94:16)\n    at async Object.callback (webpack-internal:///(rsc)/./node_modules/next-auth/core/routes/callback.js:45:11)\n    at async AuthHandler (webpack-internal:///(rsc)/./node_modules/next-auth/core/index.js:184:28)\n    at async NextAuthRouteHandler (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:57:28)\n    at async NextAuth._args$ (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:89:16)\n    at async AppRouteRouteModule.do (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:40115)\n    at async AppRouteRouteModule.handle (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:5:47395)\n    at async responseGenerator (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:254:38)\n    at async AppRouteRouteModule.handleResponse (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\compiled\\next-server\\app-route.runtime.dev.js:1:228477)\n    at async handleResponse (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:317:32)\n    at async Module.handler (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&page=%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute&appPaths=&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fapi%2Fauth%2F%5B...nextauth%5D%2Froute.ts&appDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=D%3A%5CUsers%5Cuser%5CDesktop%5Cworking%20files%5Cpersonal%20ai%5Cpostbot&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!:372:13)\n    at async DevServer.renderToResponseWithComponentsImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1462:9)\n    at async DevServer.renderPageComponent (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1514:24)\n    at async DevServer.renderToResponseImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1564:32)\n    at async DevServer.pipeImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:1044:25)\n    at async NextNodeServer.handleCatchallRenderRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\next-server.js:338:17)\n    at async DevServer.handleRequestImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\base-server.js:935:17)\n    at async D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:394:20\n    at async Span.traceAsyncFn (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\trace\\trace.js:164:20)\n    at async DevServer.handleRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js:390:24)\n    at async invokeRender (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:266:21)\n    at async handleRequest (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:465:24)\n    at async requestHandlerImpl (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\router-server.js:514:13)\n    at async Server.requestListener (D:\\Users\\user\\Desktop\\working files\\personal ai\\postbot\\node_modules\\next\\dist\\server\\lib\\start-server.js:225:13)"
+  },
+  "providerId": "linkedin"
+}
+
+2026-06-20T07:00:11.755Z - SIGNIN_OAUTH_ERROR
+{
+  "error": {},
+  "providerId": "twitter"
+}
+
+2026-06-20T07:13:43.381Z - SIGNIN_OAUTH_ERROR
+{
+  "error": {},
+  "providerId": "github"
+}
+
+2026-06-20T07:14:13.377Z - SIGNIN_OAUTH_ERROR
+{
+  "error": {},
+  "providerId": "twitter"
+}
+
