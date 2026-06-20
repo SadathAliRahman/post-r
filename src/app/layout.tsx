@@ -16,6 +16,9 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Post'r — LinkedIn Content Studio",
   description: "Schedule, publish, and grow your LinkedIn presence with AI",
+  icons: {
+    icon: "/icon-192x192.png",
+  },
 };
 
 import { Providers } from "@/components/Providers";
